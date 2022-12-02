@@ -1,0 +1,59 @@
+/*-------------------------------------------------
+    [ ## Buttons ]
+*/
+
+/*-------------------------------------------------
+    [ ## custom btn ]
+*/
+.btn--primary {
+    color: $white;
+    background-color: $dark--green--color;
+    width: 131px;
+    padding: 7px 0;
+    text-align: center;
+    border-radius: 8px;
+   
+    &:hover{
+        color: $white;
+    }
+}
+.btn--secondary {
+    background-color: #868e96;
+}
+.btn--success {
+    background-color: #28c76f;
+}
+.btn--danger {
+    background-color: #ea5455;
+}
+.btn--warning {
+    background-color: #ff9f43;
+}
+.btn--info {
+    background-color: #1e9ff2;
+}
+.btn--dark {
+    background-color: #10163a;
+}
+
+.border--primary {
+    border: 1px solid #7367f0;
+}
+.border--secondary {
+    border: 1px solid #868e96;
+}
+.border--success {
+    border: 1px solid #28c76f;
+}
+.border--danger {
+    border: 1px solid #ea5455;
+}
+.border--warning {
+    border: 1px solid #ff9f43;
+}
+.border--info {
+    border: 1px solid #1e9ff2;
+}
+.border--dark {
+    border: 1px solid #10163a;
+}

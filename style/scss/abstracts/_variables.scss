@@ -1,0 +1,69 @@
+/*-------------------------------------------------
+    [ ### font-variable start ]
+*/
+
+$font_body:  "Euclid circular" ;
+
+
+@font-face {
+    font-family: $font_body;
+    font-style: normal;
+    font-weight:normal;
+    src: url("../assets/fonts/euclid-circular-a-cufonfonts/Euclid\ Circular\ A\ Regular.ttf") format("truetype"),
+            
+}
+  
+
+/*-------------------------------------------------
+    [ ### font-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### font_family-variable start ]
+*/
+$font-awesome: 'Font Awesome 5 Free';
+/*-------------------------------------------------
+    [ ### font_family-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### font_size-variable start ]
+*/
+$base__font-size: 16px;
+$heading__one: 59px;
+$heading__two: 16px;
+$heading__three: 20px;
+$heading__four: 12px;
+$heading__five: 18px;
+$heading__six: 16px;
+/*-------------------------------------------------
+    [ ### font_size-variable end ]
+*/
+
+/*-------------------------------------------------
+    [ ### line_height-variable start ]
+*/
+$font__line-height-body: 1.5em;
+$font__line-height-heading: 1.3em;
+$font__line-height-paragraph: 1.7em;
+$font__line-height-pre: 1.6em;
+/*-------------------------------------------------
+    [ ### line_height-variable start ]
+*/
+
+/*-------------------------------------------------
+    [ ### initial-color-variable start ]
+*/
+$white: #FFFFFF; // white color
+$body--bg: #FFFFFF; // body-background
+$text--color:#000000; // text-color
+$dark--green--color: #014D58; // greenColor
+$light--green--color:#00EBC2; // light-green-color
+$footer--bg--color: #F8F8F8; 
+$footer--bottom--bg--color: #E4E4E4;
+
+
+
+/*-------------------------------------------------
+    [ ### initial-color-variable end ]
+*/
