@@ -32,3 +32,30 @@ $over.click(function(e){
 //    console.log("yes");
 //  }
 //  });
+
+// Password eye change functions
+
+$("#eye").on("click", function() {
+  var image_1 = $("#eyeImage");
+  var img1_src = "assets/icons/eye.png";
+  var img2_src = "assets/icons/close-eye.png";
+    
+  if (image_1.attr("src") == img1_src) {
+      
+      image_1.attr("src", img2_src);
+    } else {
+      image_1.attr("src", img1_src);
+    }
+});
+
+const passwordInput = document.querySelector("#password");
+const eye = document.querySelector("#eye");
+
+eye.addEventListener("click", function(){
+  
+  const type = passwordInput.getAttribute("type") === "password" ? "text" : "password"
+  passwordInput.setAttribute("type", type)
+})
+
+
+
