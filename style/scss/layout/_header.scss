@@ -7,8 +7,8 @@
 */
 .body-overflow {
     overflow-y: hidden;
-  }
-  .overlay_leftsidebar {
+}
+.overlay_leftsidebar {
     position: absolute;
     top: 92px;
     left: 0;
@@ -19,13 +19,13 @@
     // z-index: 99;
     // transition: all 0.4s ease-in-out !important;
     @media screen and (min-width: 767px) {
-      display: none;
+        display: none;
     }
-  }
-  .overlay-expand {
+}
+.overlay-expand {
     width: 100%;
     // transition: all 0.4s ease-in-out !important;
-  }
+}
 .header {
     background: $white;
     height: 92px;
@@ -72,9 +72,8 @@
             justify-content: end;
             align-items: center;
             gap: 12px;
-           margin-top: -6px;
-            @include for-max-1400{
-                
+            margin-top: -6px;
+            @include for-max-1400 {
             }
             .nav-btns {
                 display: flex;
@@ -95,6 +94,7 @@
                     }
                 }
             }
+
             .right-lists {
                 .lang-list {
                     .dropdown {
@@ -135,13 +135,16 @@
                 }
             }
         }
+        .cabinet-btns {
+            gap: 40px;
+        }
     }
 
     .navbar-mobile {
         position: relative;
-    @include for-min-767{
-        display: none;
-    }
+        @include for-min-767 {
+            display: none;
+        }
         .mobile-nav-wrapper {
             display: flex;
             justify-content: space-between;
@@ -151,10 +154,9 @@
                 i {
                 }
             }
-            .logo{
-                img{
+            .logo {
+                img {
                     max-width: 130px;
-
                 }
             }
             .right-lists {
@@ -196,40 +198,75 @@
                     }
                 }
             }
-            
         }
-        .navlist-mobile{
+        .navlist-mobile {
             background: $footer--bg--color;
             position: absolute;
             top: 60px;
-            z-index: 999;
+            z-index: 100;
             opacity: 1;
             width: 85%;
             height: 100vh !important;
             padding: 30px;
             left: -100%;
             transition: all 0.3s ease-in-out !important;
-            .nav-list{
+            .nav-list {
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
                 margin-bottom: 30px;
-                .list{
-                    .nav-link{
-
+                .list {
+                    .nav-link {
                     }
                 }
             }
-            .nav-btns{
+            .nav-btns {
                 display: flex;
                 gap: 20px;
                 align-items: center;
-                
-                .sign-in{
 
+                .sign-in {
                 }
-                .sign-up{
-
+                .sign-up {
+                }
+                .right-lists {
+                    .lang-list {
+                        .dropdown {
+                            width: 68px !important;
+    
+                            .btn-secondary {
+                                background: $white !important;
+                                color: black;
+                                border: none;
+    
+                                &:focus {
+                                    outline: none !important;
+                                    border: none !important;
+                                    box-shadow: none !important;
+                                }
+                                &::after {
+                                    display: none;
+                                }
+                            }
+                            .rotated {
+                                transform: rotate(180deg);
+                            }
+                            .dropdown-menu {
+                                min-width: 68px !important;
+                                border: none !important;
+                                padding: 15px !important;
+                                @media screen and (max-width: 767px) {
+                                    color: $white !important;
+                                }
+                                li {
+                                    .dropdown-item {
+                                        padding: 0 !important;
+                                        margin-bottom: 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }
@@ -237,6 +274,6 @@
             transition: all 0.5s ease-in-out !important;
             // display: block !important;
             left: 0;
-          }
+        }
     }
 }

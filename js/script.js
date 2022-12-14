@@ -1,7 +1,10 @@
 //Shevron rotate function
 
-$(".btn-secondary").click(function () {
-  $(".fa-chevron-down").toggleClass("rotated");
+$(".btn-cabinet").click(function () {
+  $(".chevron-cabinet").toggleClass("rotated");
+});
+$(".btn-lang").click(function () {
+  $(".chevron-language").toggleClass("rotated");
 });
 
 // Function to toggle the bar and click side hide responsive-menu
@@ -25,18 +28,12 @@ $over.click(function(e){
    $(".overlay_leftsidebar").removeClass('overlay-expand');
    $(".body").removeClass('body-overflow');
 });
-//  $($el).on('click',function(e){
-  
-//    if(($(e.target) != $el) && ($ee.hasClass('expand'))){
-//    $ee.removeClass('expand');
-//    console.log("yes");
-//  }
-//  });
+ 
 
 // Password eye change functions
 
-$("#eye").on("click", function() {
-  var image_1 = $("#eyeImage");
+$("#eye1").on("click", function() {
+  var image_1 = $("#eyeImage1");
   var img1_src = "assets/icons/eye.png";
   var img2_src = "assets/icons/close-eye.png";
     
@@ -49,13 +46,38 @@ $("#eye").on("click", function() {
 });
 
 const passwordInput = document.querySelector("#password");
-const eye = document.querySelector("#eye");
+const eye1 = document.querySelector("#eye1");
 
-eye.addEventListener("click", function(){
+eye1.addEventListener("click", function(){
   
   const type = passwordInput.getAttribute("type") === "password" ? "text" : "password"
   passwordInput.setAttribute("type", type)
 })
+
+$("#eye2").on("click", function() {
+  var image_2 = $("#eyeImage2");
+  var img1_src = "assets/icons/eye.png";
+  var img2_src = "assets/icons/close-eye.png";
+    
+  if (image_2.attr("src") == img1_src) {
+      
+      image_2.attr("src", img2_src);
+    } else {
+      image_2.attr("src", img1_src);
+    }
+});
+
+const rePasswordInput = document.querySelector("#rePassword");
+const eye2 = document.querySelector("#eye2");
+
+eye2.addEventListener("click", function(){
+  
+  const type2 = rePasswordInput.getAttribute("type") === "password" ? "text" : "password"
+  rePasswordInput.setAttribute("type", type2)
+})
+
+// For login show password
+
 
 
 
