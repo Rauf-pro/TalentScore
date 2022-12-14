@@ -10,20 +10,21 @@ input[type="password"] {
 }
 
 textarea {
-    
 }
 input,
 select,
 textarea {
-   
+    &:focus {
+        outline: none;
+    }
 }
+option:checked {
+    color: $white !important;
+    background-color:  $dark--green--color;
+}
+
 label {
-    
 }
 /*-------------------------------------------------
     [ ## Forms ]
 */
-
-
-
-

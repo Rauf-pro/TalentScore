@@ -7,240 +7,214 @@
 */
 
 // --------------------------------------------Banner section style-------------------------------------
-.banner{
-    
-    .banner-left{
-        @include for-max-767{
+.banner {
+    .banner-left {
+        @include for-max-767 {
             margin-bottom: 30px;
         }
-        .banner-title{
+        .banner-title {
             font-size: 59px;
             font-weight: bolder;
             color: $dark--green--color;
             text-transform: uppercase;
-            @include for-1200-1399{
+            @include for-1200-1399 {
                 font-size: 35px;
             }
-            @include for-1025-1199{
+            @include for-1025-1199 {
                 font-size: 35px;
             }
-            @include for-992-1024{
+            @include for-992-1024 {
                 font-size: 35px;
             }
-            @include for-768-991{
+            @include for-768-991 {
                 font-size: 30px;
             }
-            @include for-max-767{
+            @include for-max-767 {
                 font-size: 25px;
             }
-
         }
-        .banner-sub-title{
+        .banner-sub-title {
             color: $light--green--color;
             font-weight: 400;
             text-transform: uppercase;
-            @include for-1200-1399{
+            @include for-1200-1399 {
                 font-size: 35px;
             }
-            @include for-1025-1199{
+            @include for-1025-1199 {
                 font-size: 35px;
             }
-            @include for-992-1024{
+            @include for-992-1024 {
                 font-size: 35px;
             }
-            @include for-768-991{
+            @include for-768-991 {
                 font-size: 30px;
             }
-            @include for-max-767{
+            @include for-max-767 {
                 font-size: 25px;
             }
-
         }
-        .content{
-            .banner-text{
+        .content {
+            .banner-text {
                 font-size: 25px;
                 font-weight: 400;
                 line-height: 24px;
                 margin-top: 31px;
-                @include for-max-575{
+                @include for-max-575 {
                     font-size: 14px;
                 }
-                @include for-max-991{
+                @include for-max-991 {
                     font-size: 18px;
                 }
-
             }
         }
-        .banner-btn{
+        .banner-btn {
             margin-top: 50px;
 
-            @include for-max-991{
+            @include for-max-991 {
                 margin-top: 25px;
             }
-
         }
     }
-    .banner-right{
+    .banner-right {
         display: flex;
         justify-content: end;
-        @include for-max-575{
+        @include for-max-575 {
             display: none;
         }
-        @include for-max-767{
+        @include for-max-767 {
             justify-content: center;
         }
-        img{
+        img {
             object-fit: cover;
 
-            @include for-max-767{
+            @include for-max-767 {
                 width: 300px;
             }
         }
     }
 }
-.login{
-    .login-left{
-        @include for-max-767{
+.login {
+    .login-left {
+        @include for-max-767 {
             display: none;
         }
-        img{
-
+        img {
         }
     }
-    .form-wrapper{
-        
-        .login-title{
+    .form-wrapper {
+        .login-title {
             margin-top: 30px;
             text-align: center;
             font-size: 24px;
             margin-bottom: 20px;
-
         }
-        .login-form{
-            .email-input-wrapper{
+        .login-form {
+            .email-input-wrapper {
                 margin-bottom: 32px;
 
-                label{
-
+                label {
                 }
-                .input{
+                .input {
                     width: 100%;
-
                 }
-                
             }
-            .password-input-wrapper{
-
-               
-
-                label{}
-                .passinput-wrapper{
+            .password-input-wrapper {
+                label {
+                }
+                .passinput-wrapper {
                     position: relative;
-                    .input{
+                    .input {
                         width: 100%;
-                       
                     }
-                    .eye{
+                    .eye {
                         position: absolute;
                         top: 11px;
                         bottom: 0;
                         right: 20px;
                         cursor: pointer;
-                        
                     }
-                   
                 }
-                
-
             }
-            .save-gorget-wrapper{
+            .save-gorget-wrapper {
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 margin-top: 20px;
-                .input-save-wrapper{
+                .input-save-wrapper {
                     display: flex;
                     align-items: center;
                     gap: 8px;
-                    .input-checkbox{
-
+                    .input-checkbox {
                     }
-                    span{
-
+                    span {
                     }
                 }
-                
-                .forge-question{
-                    color: $blue-color;
 
+                .forge-question {
+                    color: $blue-color;
                 }
             }
-            .login-btn{
+            .login-btn {
                 width: 100%;
             }
         }
     }
 }
-.register{
-    .form-wrapper{
-        .register-title{
-
+.register {
+    .form-wrapper {
+        .register-title {
         }
-        .register-form{
-            .email-input-wrapper{
-                label{}
-                .input{
-
+        .register-form {
+            .email-input-wrapper {
+                label {
+                }
+                .input {
                 }
             }
-            .password-input-wrapper{
-                label{}
-                .input{
+            .password-input-wrapper {
+                label {
+                }
+                .input {
                     width: 100%;
-
                 }
             }
-            .repeat-password{
+            .repeat-password {
                 margin-top: 32px;
             }
-            .register-notification{
+            .register-notification {
                 margin-top: 25px;
                 margin-bottom: 14px;
                 font-size: 14px;
                 padding: 0 20px;
                 text-align: center;
-                p{
-                    a{
+                p {
+                    a {
                         color: $blue-color;
                     }
                 }
-        
             }
         }
     }
-    
 }
 .contact {
-    .contact-title{
+    .contact-title {
         text-align: center;
         font-size: 24px;
         margin-bottom: 27px;
-        
     }
-    .contact-form-wrapper{
-       margin: 0 auto;
+    .contact-form-wrapper {
+        margin: 0 auto;
         width: 70%;
-        @include for-max-575{
+        @include for-max-575 {
             width: 100%;
         }
-        label{
-
+        label {
         }
-        .input{
+        .input {
             width: 100%;
             margin-bottom: 10px;
         }
-        .textarea{
+        .textarea {
             width: 100%;
             height: 130px;
         }
@@ -250,69 +224,200 @@
         }
     }
 }
-.forget-password{
-    .form-wrapper{
-        .forget-title{
+.forget-password {
+    .form-wrapper {
+        .forget-title {
             margin-bottom: 90px;
         }
     }
-
-    
 }
-.reset-password{
-    .form-wrapper{
-        .reset-title{
-
+.reset-password {
+    .form-wrapper {
+        .reset-title {
         }
-        .reset-form{
-            .email-input-wrapper{
+        .reset-form {
+            .email-input-wrapper {
                 margin-bottom: 10px;
-                .input{
+                .input {
                     width: 100%;
                 }
             }
-            .password-input-wrapper{
-                .input{
+            .password-input-wrapper {
+                .input {
                     width: 100%;
                 }
             }
-            .reset-input-wrapper{
+            .reset-input-wrapper {
                 margin-bottom: 10px;
             }
-            .reset-btn{
+            .reset-btn {
                 width: 100%;
                 margin-top: 37px;
             }
-           
         }
     }
 }
-.about{
-   .banner-left{}
-   .banner-right{
-    img{
-        width: 400px;
-        @include for-max-767{
-           width: 300px;
+.about {
+    .banner-left {
+    }
+    .banner-right {
+        img {
+            width: 400px;
+            @include for-max-767 {
+                width: 300px;
+            }
+            @include for-768-991 {
+            }
         }
-        @include for-768-991{
-           
+    }
+}
+.steps {
+    padding-top: 93px;
+    .heading-steps {
+        text-align: center;
+        background: $dark--green--color;
+        height: 227px;
+        padding-top: 82px;
+        // padding: 101px 0;
+        @include for-max-767 {
+            height: 108px;
+            padding-top: 42px;
+        }
+
+        .title {
+            font-size: 48px;
+            color: $white;
+            @include for-max-767 {
+                font-size: 16px;
+            }
+        }
+    }
+    .form-wrapper {
+        background: $white;
+        box-shadow: 0px 0px 90px rgba(183, 183, 183, 0.38);
+        border-radius: 21px;
+        padding: 145px 109px;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 184px;
+        @include for-max-767 {
+            width: 100%;
+            padding: 27px 27px 94px 27px;
+            margin-top: 126px;
+        }
+        @include for-768-991 {
+            width: 70%;
+            padding: 27px 27px 94px 27px;
+        }
+
+        .steps-form-wrapper {
+            label {
+                &:not(:first-child) {
+                    margin-top: 17px;
+                }
+            }
+            .input {
+                width: 100%;
+            }
+            .steps-input {
+                width: 100%;
+                padding-right: 20px !important;
+                // appearance: none;
+                .bg-col {
+                }
+            }
+            .steps-btn {
+                width: 100%;
+                margin-top: 49px;
+                @include for-max-767 {
+                    margin-top: 31px;
+                }
+            }
+        }
+    }
+}
+.step-two {
+    .form-wrapper {
+        @include for-max-575{
+            padding: 27px 0 94px 0;
+        }
+        @include for-992-1024{
+            padding: 27px 27px 94px 27px;
+            
+        }
+        @include for-1025-1199{
+            padding: 27px 27px 94px 27px;
+
+        }
+        .steps-form-wrapper {
+            .input-description-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 35px;
+                .input {
+                    width: 202px;
+                    @include for-max-575{
+                        width: 100px;
+                    }
+                }
+                .description{
+                    h2{
+                        font-weight: 400;
+                        span{
+                            font-weight: bold;
+
+                        }
+                    }
+                }
+            }
+            .steps-btn{
+                margin-top: 117px;
+                @include for-max-767{
+                    margin-top: 57px;
+                }
+            }
             
         }
     }
-   }
 }
+.step-four{
+    .form-wrapper{
+        .text-area{
+            text-align: center;
+            font-weight: 400;
+            font-size: 46px;
+            line-height: 65px;
+            @include for-max-767{
+                font-size: 19px;
+                line-height: 45px;
+            }
+            .name{
+                font-weight: bold;
+            }
+            .surname{
+                font-weight: bold;
 
+            }
 
+        }
+        .star-area{
+            display: flex;
+            justify-content: center;
+            gap: 21px;
+            margin-top: 70px;
+            @include for-max-767{
+                padding:  0 20px;
+                gap: 13px;
+            }
 
+            img{
+                @include for-max-767{
+                    width: 38px;
+                }
+            }
 
-
-
-
-
-
-
-
-
-
-
+            
+        }
+    }
+}
