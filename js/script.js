@@ -1,11 +1,26 @@
-//Shevron rotate function
+//Shevron rotate for language function
 
-$(".btn-cabinet").click(function () {
-  $(".chevron-cabinet").toggleClass("rotated");
-});
 $(".btn-lang").click(function () {
   $(".chevron-language").toggleClass("rotated");
 });
+$(window).click(function() {
+  $(".chevron-language").removeClass('rotated')
+});
+$('.btn-lang').click(function(event){
+    event.stopPropagation();
+  });
+
+// Shevron rotate for cabinet function
+  $(".btn-cabinet").click(function () {
+    $(".chevron-cabinet").toggleClass("rotated");
+  });
+  $(window).click(function() {
+    $(".chevron-cabinet").removeClass('rotated')
+  });
+  $('.btn-cabinet').click(function(event){
+      event.stopPropagation();
+    });
+
 
 // Function to toggle the bar and click side hide responsive-menu
   

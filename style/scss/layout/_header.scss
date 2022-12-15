@@ -16,7 +16,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.48);
     opacity: 0.9;
-    // z-index: 99;
+    z-index: 99;
     // transition: all 0.4s ease-in-out !important;
     @media screen and (min-width: 767px) {
         display: none;
@@ -34,6 +34,7 @@
     box-shadow: 0px 4px 15px -3px rgba(1, 77, 88, 0.2);
     position: fixed;
     width: 100%;
+    z-index: 100;
     .navbar-desktop {
         display: flex;
         align-items: center;
@@ -142,6 +143,7 @@
 
     .navbar-mobile {
         position: relative;
+        z-index: 100;
         @include for-min-767 {
             display: none;
         }
@@ -150,6 +152,7 @@
             justify-content: space-between;
             align-items: center;
             .menu-bar {
+                padding-right: 15px;
                 cursor: pointer;
                 i {
                 }
@@ -203,8 +206,7 @@
             background: $footer--bg--color;
             position: absolute;
             top: 60px;
-            z-index: 100;
-            opacity: 1;
+            z-index: 999;
             width: 85%;
             height: 100vh !important;
             padding: 30px;

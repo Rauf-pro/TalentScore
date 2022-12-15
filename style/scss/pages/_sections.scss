@@ -123,7 +123,7 @@
                 }
                 .passinput-wrapper {
                     position: relative;
-                    z-index:-1;
+                   
                     .input {
                         width: 100%;
                     }
@@ -132,6 +132,7 @@
                         top: 11px;
                         bottom: 0;
                         right: 20px;
+                        
                        
                         cursor: pointer;
                     }
@@ -413,6 +414,7 @@
             @include for-max-767{
                 padding:  0 20px;
                 gap: 13px;
+                margin-top: 40px;
             }
 
             img{
