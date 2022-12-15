@@ -2,6 +2,7 @@
 
 footer {
     background: $footer--bg--color;
+    height: 220px;
     @include for-max-1400 {
         margin-top: 67px !important;
     }
